@@ -1,0 +1,172 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightblue;
+  margin: 5px;
+  padding: 5px;
+  display: block;
+  align-items: center;
+}
+
+.header {
+  background-color: #3498dc;
+  padding: 10px 0;
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__sign {
+  font-size: 25px;
+  height: 40px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.header__nav {
+  display: flex;
+  gap: 15px;
+}
+.header__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 4px 8px;
+  transition: background-color 0.3s ease;
+}
+.header__link:hover {
+  background-color: #3e3e3e;
+  border-radius: 5px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+.content__section {
+  display: flex;
+  gap: 20px;
+}
+.content .card {
+  text-align: center;
+}
+.content .card__highlight {
+  background-color: #2acc71;
+  color: white;
+}
+.content .card__title {
+  font-size: 35px;
+  font-weight: bold;
+  color: #853e2f;
+  margin-bottom: 15px;
+}
+.content .card__paragraph {
+  font-size: 25px;
+  color: #853e2f;
+  margin-bottom: 30px;
+}
+.content .card__button {
+  background-color: #3498dc;
+  padding: 12px 18px;
+  border-radius: 5px;
+  color: #3e3e3e;
+  border: none;
+  cursor: pointer;
+  transition-property: #2acc71;
+  transition-duration: 300ms;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.portfolio__container {
+  flex: 1 1 30%;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio__container img {
+  width: 80%;
+  height: 80%;
+  display: block;
+  cursor: pointer;
+}
+.portfolio__content {
+  display: flex;
+  text-align: center;
+  color: #853e2f;
+  margin: 10px;
+  padding: 10px;
+  cursor: alias;
+  transform: none;
+}
+
+.contact {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.contact__header {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.form {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form__content {
+  margin-bottom: 16px;
+}
+.form__label {
+  font-size: large;
+  display: block;
+  font-weight: medium;
+  margin-bottom: 8px;
+}
+.form__input {
+  width: 100%;
+  background-color: lightblue;
+  border-color: #3e3e3e;
+  border-radius: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.form__button {
+  font-size: large;
+  width: 100%;
+  background-color: lightblue;
+  border-color: #3e3e3e;
+  border-radius: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.footer {
+  background-color: #3e3e3e;
+  color: brown;
+  padding: 20px;
+  margin: 25px;
+  width: 100%;
+  text-align: center;
+}
+.footer__text {
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */

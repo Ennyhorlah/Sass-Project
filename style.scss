@@ -1,0 +1,205 @@
+$primary-color: #3498dc;
+$secondary-color: #2acc71;
+$bg-color: lightblue;
+$text-color: #853e2f;
+
+@mixin button-style{
+    padding: 12px 18px;
+    border-radius: 5px;
+    color: #3e3e3e;
+    border: none;
+    cursor: pointer;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: $bg-color;
+    margin: 5px;
+    padding: 5px;
+    display: block;
+    align-items: center;
+}
+
+.header{
+    background-color: $primary-color;
+    padding: 10px 0;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+    &__container{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__sign{
+        font-size: 25px;
+        height: 40px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+    &__nav{
+        display: flex;
+        gap: 15px;
+    }
+
+    &__link{
+        color: #fff;
+        text-decoration: none;
+        font-size: 25px;
+        padding: 4px 8px;
+        transition: background-color 0.3s ease;
+
+        &:hover{
+            background-color: #3e3e3e;
+            border-radius: 5px;
+        }
+    }
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: fit-content;
+
+    &__section{
+        display: flex;
+        gap: 20px;
+    }
+
+    .card{
+        
+        text-align: center;
+
+        &__highlight{
+            background-color: $secondary-color;
+            color:white;
+        }
+
+        &__title{
+            font-size: 35px;
+            font-weight: bold;
+            color: $text-color;
+            margin-bottom: 15px;
+        }
+
+        &__paragraph{
+            font-size: 25px;
+            color: $text-color;
+            margin-bottom: 30px;
+        }
+
+        &__button{
+            background-color: $primary-color;
+            @include button-style;
+            transition-property: $secondary-color;
+            transition-duration: 300ms;
+    
+        }
+    }    
+}
+
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    &__container{
+           flex: 1 1 30%;
+           position:relative;
+           overflow: hidden;
+    }
+
+    &__container img{
+        width: 80%;
+        height: 80%;
+        display: block;
+        cursor: pointer;
+    }
+
+    &__content{
+           display: flex;
+           text-align: center;
+           color: $text-color;
+           margin: 10px;
+           padding:10px;
+           cursor: alias;
+           transform: none;
+    
+        }
+        
+    }
+
+    .contact{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        &__header{
+            font-size: 30px;
+            line-height: 36px;
+            font-weight: bold;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+    }
+
+    .form{
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &__content{
+            margin-bottom: 16px;
+        }
+
+        &__label{
+            font-size: large;
+            display: block;
+            font-weight: medium;
+            margin-bottom: 8px;
+        }
+
+        &__input{
+            width: 100%;
+            background-color: $bg-color;
+            border-color: #3e3e3e;
+            border-radius: 5px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        &__button{
+            font-size: large;
+            width: 100%;
+            background-color: $bg-color;
+            border-color: #3e3e3e;
+            border-radius: 5px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    }
+
+
+    .footer{
+        background-color: #3e3e3e;
+        color: brown;
+        padding: 20px;
+        margin: 25px;
+        width: 100%;
+        text-align: center;
+
+        &__text{
+            margin: 0;
+        }
+    }
